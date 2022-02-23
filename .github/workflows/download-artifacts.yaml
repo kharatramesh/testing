@@ -9,7 +9,7 @@ jobs:
           mkdir test
           cd test
           wget https://github.com/kharatramesh/cfquest/actions/runs/1885385627
- 
+          ls -l
       - name: upload file from marketplace actions1
         uses: actions/upload-artifact@v1 
         with:
