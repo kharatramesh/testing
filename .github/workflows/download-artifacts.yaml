@@ -1,0 +1,19 @@
+name: download artifacts
+on: push
+jobs:
+  download-artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: use wget
+        run: |
+          mkdir test
+          cd test
+          wget https://github.com/kharatramesh/cfquest/actions/runs/1885385627
+   
+ upload-artifacts:
+   steps:
+      - name: upload file from marketplace actions1
+        uses: actions/upload-artifact@v1 
+        with:
+          name: hello-world
+          path: test/
