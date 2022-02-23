@@ -8,7 +8,7 @@ jobs:
         run: |
           mkdir test
           cd test
-          curl https://github.com/kharatramesh/cfquest/actions/runs/1885385627
+          wget https://github.com/kharatramesh/cfquest/actions/runs/1885385627/
           ls -l
       - name: upload file from marketplace actions1
         uses: actions/upload-artifact@v1 
